@@ -57,6 +57,10 @@ As said earlier MongoDB is Schemaless but to make data consistent we need mongoo
 
 Just like in Rails, we can use mongoose to create models so that the controller can access the models to enusure data integrity.
 
+(Mongoose Docs)[https://mongoosejs.com/docs/index.html]
+
+To start mongodb run `mongod`
+
 lets start off by install mongoose in our node application.
 
 ```javascript
@@ -82,7 +86,15 @@ $ npm install mongoose --save
   });
 ```
 
-Fields can be either
+Fields can have any of the following data types:
+- String
+- Number
+- Date
+- Buffer
+- Boolean
+- Mixed
+- ObjectId
+- Array
 
 
 
@@ -95,7 +107,7 @@ var blogSchema = new Schema({
     comments: [{ body: String, date: Date }],
     date: { type: Date, default: Date.now },
     hidden: Boolean,
-    meta: {
+    meta: { //embedded Object
       votes: Number,
       favs:  Number
     }
@@ -319,3 +331,5 @@ app.get('/fruits/:id', (req, res)=>{
     });
 });
 ```
+
+(Start Driver Management)[driver.md]
