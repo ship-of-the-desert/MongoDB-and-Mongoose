@@ -53,8 +53,8 @@ Index, New and Create has been completed for you.
 
 
 ### Views
- - Add an EJS file in your views called `new.ejs` 
- - Create a form in `new.ejs` to add data to your
+ - Create the following EJS files in your `views` folder: `new.ejs show.ejs index.ejs` 
+ - Create a form in `new.ejs` to add data to your company collection
  
  > Remember to require your model in your server.js
   
