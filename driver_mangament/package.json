@@ -1,0 +1,17 @@
+{
+  "name": "driver_mangament",
+  "version": "1.0.0",
+  "description": "who is driving the car and the status of the car when returned",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "meshal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.4"
+  }
+}
